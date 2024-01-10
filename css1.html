@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Properties</title>
+    <!-- normalize.css -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <style>
+      /* width */
+      div {
+        width: 100px;
+        height: 100px;
+      }
+      /* margin */
+      div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      /* padding */
+      div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      /* margin e padding outras formas */
+      div {
+        /* top, bottom, right, left */
+        /* Define o valor 10px para os quatro lados igualmente */
+        margin: 10px;
+        padding: 10px;
+        /* top, bottom right, left */
+        /* Define o valor 10px para top e bottom e 20px para right e left */
+        margin: 10px 20px;
+        padding: 10px 20px;
+        /* top right, left bottom */
+        /* Define o valor 10px para top, 25px para bottom e 20px para right e left */
+        margin: 10px 20px 25px;
+        padding: 10px 20px 25px;
+        /* top right bottom left */
+        /* Define o valor 10px para top, 25px para bottom, 20px para right e 30px left */
+        margin: 10px 20px 25px 30px;
+        padding: 10px 20px 25px 30px;
+      }
+
+      /* border */
+      div {
+        border: 1px solid #000;
+        /* Pode ser definido separadamente também */
+        border-width: 1px;
+        border-style: solid;
+        border-color: #000;
+      }
+
+      /* box-sizing */
+      div {
+        box-sizing: border-box;
+      }
+
+      /* border-radius */
+      div {
+        border-radius: 8px;
+      }
+
+      /* border-radius outras maneiras */
+      div {
+        border-radius: 8px;
+        /* Pode definir os cantos separadamente de uma vez */
+        /* topo-esquerda topo-direita base-direita base-esquerda */
+        border-radius: 1px 2px 3px 4px;
+        /* Pode ser definido separadamente também */
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+
+      /* box-shadow */
+      div {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      /* background-color */
+      div {
+        background-color: #000000;
+      }
+
+      /* background-image */
+      div {
+        background-image: url("URL_DA_IMAGEM");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      /* unit */
+      div {
+        width: 10px;
+        width: 100%;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      /* unidade de medida rem */
+      html {
+        font-size: 10px;
+      }
+      div {
+        /* 1rem = 10px */
+        width: 1rem;
+        height: 1rem;
+      }
+
+      /* pseudo seletores :hover */
+      button {
+        background-color: #ef4444;
+        /* opcional, mas legal */
+        transition: all 200ms linear;
+      }
+      button:hover {
+        background-color: #f43f5e;
+      }
+
+      /* Pseudo-seletores: :first-child, :last-child e :nth-child */
+      ul li {
+        background-color: #0ea5e9;
+      }
+      ul li:first-child {
+        background-color: #6366f1;
+      }
+      ul li:last-child {
+        background-color: #f97316;
+      }
+      ul li:nth-child(2) {
+        background-color: #84cc16;
+      }
+
+      /* classes e flexbox */
+      .flex {
+        display: flex;
+        gap: 2rem;
+        height: 10rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .flex .flex-item {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        order: 1;
+      }
+      .flex .flex-item:first-item,
+      .flex .flex-item:last-item {
+        flex-grow: 3;
+      }
+      .flex-item:first-item {
+        flex-shrink: 3;
+      }
+      .flex .flex-item:nth-child(2) {
+        order: 3;
+      }
+      .flex .flex-item:nth-child(3) {
+        order: 2;
+      }
+
+      /* grid */
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 20rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>conteúdo</div>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+    <div class="flex">
+      <div class="flex-item">Elemento 1</div>
+      <div class="flex-item">Elemento 2</div>
+      <div class="flex-item">Elemento 3</div>
+    </div>
+    <header></header>
+    <footer></footer>
+    <main></main>
+    <nav></nav>
+    <article></article>
+    <section></section>
+    <aside></aside>
+    <div class="grid">
+      <div class="grid-item">Elemento 1</div>
+      <div class="grid-item">Elemento 2</div>
+      <div class="grid-item">Elemento 3</div>
+    </div>
+  </body>
+</html>
