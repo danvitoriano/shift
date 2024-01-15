@@ -1,0 +1,285 @@
+<!-- Remix Icons: Instalando via CDN -->
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+<style>
+    /* Propriedades CSS: position: static; */
+    .element {
+    position: static;
+    }
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="element">Hello!</div>
+</div>
+
+<!-- Alguns exemplos Remix Icons: Usando os ícones -->
+
+<i class="ri-arrow-left-up-line"></i>
+<i class="ri-bank-line"></i>
+<i class="ri-wifi-line"></i>
+
+<!-- Propriedades CSS: top, bottom, left, right -->
+<style>
+    .element:first-child {
+    top: 0;
+    left: 0;
+    }
+
+    .element:last-child {
+    bottom: 0;
+    right: 0;
+    }
+</style>
+<div class="wrapper">
+    <div class="element">Hello!</div>
+    <div class="element">Hello!</div>
+</div>
+
+<!-- Propriedades CSS: position: relative; -->
+<style>
+    .element {
+    position: relative;
+    }
+</style>
+<div class="wrapper">
+    <div class="element">Hello!</div>
+</div>
+
+<!-- Propriedades CSS: position: absolute; -->
+<style>
+    .wrapper {
+    position: relative;
+    }
+
+    .element {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    }
+</style>
+<div class="wrapper">
+    <div class="element">Hello!</div>
+</div>
+
+<!-- Propriedades CSS: position: fixed; -->
+<style>
+    .element {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    }
+</style>
+<div class="wrapper">
+    <div class="element">Hello!</div>
+</div>
+
+<!-- Propriedades CSS: position: sticky; -->
+<style>
+    .element {
+    position: sticky;
+    top: 10px;
+    }
+</style>
+<div class="wrapper">
+    <div class="element">Hello!</div>
+</div>
+
+<!-- Propriedades CSS: z-index -->
+<style>
+    .element {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    }
+
+    .element:first-child {
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    z-index: 2;
+    }
+
+    .element:last-child {
+    top: 20px;
+    left: 20px;
+    background-color: blue;
+    z-index: 1;
+    }
+</style>
+<div class="wrapper">
+    <div class="element">Hello!</div>
+    <div class="element">World!</div>
+</div>
+
+<!-- Tabelas e CSS: algumas tricks -->
+<style>
+    table tr:nth-child(odd) {
+    background: #cbd5e1;
+    }
+
+    table tr:nth-child(even) {
+    background: #f1f519;
+    }
+
+    table tr:hover {
+    background: #64748b;
+    color: #fff;
+    }
+</style>
+<table>
+    <tr>
+    <td>Olá</td>
+    <td>Mundo</td>
+    </tr>
+    <tr>
+    <td>Hello</td>
+    <td>World</td>
+    </tr>
+    <tr>
+    <td>Hola</td>
+    <td>Mundo</td>
+    </tr>
+    <tr>
+    <td>Bonjur</td>
+    <td>le Monde</td>
+    </tr>
+</table>
+
+<!-- Propriedades CSS: @media (media query) -->
+<style>
+    div {
+    width: 100%;
+    height: 10rem;
+    background: red;
+    }
+
+    @media (min-width: 768px) {
+    /* Estilos aplicados em telas maiores ou iguais a 768px */
+    div {
+        background: blue;
+    }
+    }
+
+    @media (min-width: 1200px) {
+    /* Estilos aplicados em telas matores ou iguais a 1200px */
+    div {
+        background: green;
+    }
+    }
+</style>
+
+<!-- Metatags SEO:  -->
+<title>Título da Página</title>
+
+<!-- Metatags SEO: <meta name="description" /> -->
+<meta name="description" content="Descrição da página" />
+
+<!-- Metatags SEO: <meta name="robots" /> -->
+<!-- Para garantir a ativação
+--->
+<meta name="robots" content="index, follow" />
+<!-- Para desativar -->
+<meta name="robots" content="noindex, nofollow" />
+
+<!-- Metatags SEO: <meta name="og:title" /> -->
+<meta name="og:title" content="Título da página" />
+
+<!-- Metatags SEO: <meta name="og:description" /> -->
+<meta name="og:description" content="Descrição da página" />
+
+<!-- Metatags SEO: <meta name="og:image" /> -->
+<meta name="og:image" content="URL da imagem referente a página" />
+
+<!-- Tags HTML: <form> -->
+<form method="GET" action="URL_DE_ENVIO"></form>
+
+<!-- Tags HTML: <input> -->
+<form>
+    <input type="text" name="name" />
+</form>
+
+<!-- Tags Input: value -->
+<form>
+    <input type="text" name="name" value="Meu valor inicial" />
+</form>
+
+<!-- Tags Input: placeholder -->
+<form>
+    <input type="text" name="name" placeholder="Digite seu nome" />
+</form>
+
+<!-- Tags Input: required -->
+<form><input type="text" name="name" required /></form>
+
+<!-- Tags Input: disabled -->
+<style>
+    input[disabled] {
+    opacity: 0.2;
+    }
+</style>
+<form>
+    <input type="text" name="name" disabled />
+</form>
+
+<!-- Tags Input: readonly -->
+<form>
+    <input type="text" name="name" readonly />
+</form>
+
+<!-- Tags Input: maxlength -->
+<form>
+    <input type="text" name="name" maxlength="10" />
+</form>
+
+<!-- Tags Input: min e max -->
+<form>
+    <input type="number" name="name" min="3" max="8" />
+</form>
+
+<!-- Tags HTML: <label> -->
+<form>
+    <label for="name-field"> Digite seu nome </label>
+    <input type="text" name="name" id="name-field" />
+</form>
+
+<!-- Tags HTML: <input type="checkbox"> -->
+<form>
+    <input type="checkbox" name="option" value="value" id="opt-1-field" />
+    <label for="opt-1-field"> Valor 1 </label>
+    <input type="checkbox" name="option" value="value2" id="opt-2-field" 1 />
+    <label for="opt-2-field"> Valor 2 </label>
+</form>
+
+<!-- Tags HTML: <input type="radio"> -->
+<form>
+    <input type="radio" name="option" value="value" id="opt-1-field" />
+    <label for="opt-1-field"> Valor 1 </label>
+    <input type="radio" name "option" value="value2" id="opt-2-field" 1>
+    <label for="opt-2-field"> Valor 2 </label>
+</form>
+
+<!-- Tags HTML: <input type="file"> -->
+<form>
+    <input type="file" name="files" multiple />
+</form>
+
+<!-- Tags HTML: <input type="submit"> -->
+<form>
+    <input type="text" name="name" />
+    <input type="submit" value="Enviar" />
+    <!-- Outra opção -->
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- Tags HTML: <input type="reset"> -->
+<form>
+    <input type="text" name="name" />
+    <input type="reset" value="Limpar campos" />
+    <!-- Outra opção -->
+    <button type="reset">Limpar campos</button>
+</form>
