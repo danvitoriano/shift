@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      /* classes e flexbox */
+      .flex {
+        display: flex;
+        gap: 2rem;
+        height: 10rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .flex .flex-item {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        order: 1;
+      }
+      .flex .flex-item:first-item,
+      .flex .flex-item:last-item {
+        flex-grow: 3;
+      }
+      .flex-item:first-item {
+        flex-shrink: 3;
+      }
+      .flex .flex-item:nth-child(2) {
+        order: 3;
+      }
+      .flex .flex-item:nth-child(3) {
+        order: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="flex-item">Elemento 1</div>
+      <div class="flex-item">Elemento 2</div>
+      <div class="flex-item">Elemento 3</div>
+    </div>
+  </body>
+</html>

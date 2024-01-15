@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      /* grid */
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 20rem;
+      }
+      .grid-item {
+        background-color: #000;
+        color: #fff;
+        padding: 1rem;
+        border: 1px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="grid-item">Elemento 1</div>
+      <div class="grid-item">Elemento 2</div>
+      <div class="grid-item">Elemento 3</div>
+    </div>
+  </body>
+</html>
