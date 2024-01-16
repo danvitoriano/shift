@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+    <style>
+      input[disabled] {
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tags HTML: <form> -->
+    <form method="GET" action="URL_DE_ENVIO">
+      <!-- Tags HTML: <input> -->
+      <input type="text" name="name" />
+      <!-- Tags Input: value -->
+      <input type="text" name="name" value="Meu valor inicial" />
+      <!-- Tags Input: placeholder -->
+      <input type="text" name="name" placeholder="Digite seu nome" />
+      <!-- Tags Input: required -->
+      <input type="text" name="name" required />
+      <!-- Tags Input: disabled -->
+      <input type="text" name="name" disabled />
+      <!-- Tags Input: readonly -->
+      <input type="text" name="name" readonly />
+      <!-- Tags Input: maxlength -->
+      <input type="text" name="name" maxlength="10" />
+      <!-- Tags Input: min e max -->
+      <input type="number" name="name" min="3" max="8" />
+      <!-- Tags HTML: <label> -->
+      <label for="name-field"> Digite seu nome </label>
+      <input type="text" name="name" id="name-field" />
+      <!-- Tags HTML: <input type="checkbox"> -->
+      <input type="checkbox" name="option" value="value" id="opt-1-field" />
+      <label for="opt-1-field"> Valor 1 </label>
+      <input type="checkbox" name="option" value="value2" id="opt-2-field" 1 />
+      <label for="opt-2-field"> Valor 2 </label>
+      <!-- Tags HTML: <input type="radio"> -->
+      <input type="radio" name="option" value="value" id="opt-1-field" />
+      <label for="opt-1-field"> Valor 1 </label>
+      <input type="radio" name "option" value="value2" id="opt-2-field" 1>
+      <label for="opt-2-field"> Valor 2 </label>
+      <!-- Tags HTML: <input type="file"> -->
+      <input type="file" name="files" multiple />
+      <!-- Tags HTML: <input type="submit"> -->
+      <input type="text" name="name" />
+      <input type="submit" value="Enviar" />
+      <!-- Outra opção -->
+      <button type="submit">Enviar</button>
+      <!-- Tags HTML: <input type="reset"> -->
+      <input type="text" name="name" />
+      <input type="reset" value="Limpar campos" />
+      <!-- Outra opção -->
+      <button type="reset">Limpar campos</button>
+    </form>
+  </body>
+</html>
