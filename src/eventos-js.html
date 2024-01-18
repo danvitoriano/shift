@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos no JS</title>
+    <link rel="stylesheet" href="../public/css/tailwindcss.css" />
+    <script src="../public/js/eventos-js.js"></script>
+  </head>
+  <body>
+    <button>Clique aqui</button>
+
+    <script>
+
+        // exemplo 1
+        console.log("Exemplo 1");
+
+        // exemplo 2
+        alert("Exemplo 2");
+
+        // selecione o elemento
+        const button = document.querySelector("button");
+  
+        // defina a função
+        function buttonOnClick() {
+          alert("Você clicou no botão!");
+        }
+  
+        // adicione o evento
+        button.addEventListener("click", buttonOnClick);
+  
+        // se necessário, remova o evento
+        // button.removeEventListener("click", buttonOnClick);
+      </script>
+
+  </body>
+</html>
